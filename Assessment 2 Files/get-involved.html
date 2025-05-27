@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Involved | GreenRoots</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.jpg" alt="GreenRoots Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="get-involved.html" class="active">Get Involved</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-section">
+    <h1>Volunteer With Us</h1>
+    <form id="volunteer-form">
+      <label>Name: <input type="text" required></label><br>
+      <label>Email: <input type="email" required></label><br>
+      <label>Why do you want to volunteer?</label><br>
+      <textarea required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Donate</h2>
+    <p>We welcome donations to support our mission. <a href="#">Click here</a> to donate.</p>
+
+    <h2>Download Our Calendar</h2>
+    <a href="docs/event-calendar.pdf" download>📅 Download Event Calendar</a>
+
+    <h2>FAQs</h2>
+    <div class="faq">
+      <button class="faq-question">What do I need to bring to volunteer?</button>
+      <div class="faq-answer">Gardening gloves, water bottle, and enthusiasm!</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 GreenRoots | Follow us on 
+      <a href="#">Instagram</a>, 
+      <a href="#">Facebook</a>, 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        button.nextElementSibling.classList.toggle('visible');
+      });
+    });
+  </script>
+</body>
+</html>
